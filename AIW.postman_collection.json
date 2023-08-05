@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "2461e79d-f3ba-4145-b57a-2f011a7a6f59",
+		"name": "AIW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UpdatePrompt",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\": 1,\r\n    \"title\": \"Prompt1\",\r\n    \"content\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staging.mindflow.tools/aiw-api/api/prompt/updateByNum",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"mindflow",
+						"tools"
+					],
+					"path": [
+						"aiw-api",
+						"api",
+						"prompt",
+						"updateByNum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPrompts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://staging.mindflow.tools/aiw-api/api/prompt",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"mindflow",
+						"tools"
+					],
+					"path": [
+						"aiw-api",
+						"api",
+						"prompt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
